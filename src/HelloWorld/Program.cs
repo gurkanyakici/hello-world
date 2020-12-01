@@ -12,8 +12,7 @@ namespace HelloWorld
         {
             while (Console.ReadKey().Key != ConsoleKey.E)
             Console.WriteLine("Hello, World!");
-            Console.WriteLine("Press E for exit...");
-
+            Console.WriteLine("Press E for exit...\n");
         }
     }
 }
