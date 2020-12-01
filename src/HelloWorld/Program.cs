@@ -10,8 +10,9 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
+            while (Console.ReadKey().Key != ConsoleKey.E)
             Console.WriteLine("Hello, World!");
-            Console.ReadKey();
+            
         }
     }
 }
