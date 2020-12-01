@@ -10,9 +10,13 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            while (Console.ReadKey().Key != ConsoleKey.E)
-            Console.WriteLine("Hello, World!");
-            Console.WriteLine("Press E for exit...\n");
+            bool exitRequested = false;
+            while (!exitRequested)
+            {
+                Console.WriteLine("Hello, World!");
+                Console.WriteLine("Press ESC for exit...");
+                exitRequested = Console.ReadKey(true).Key == ConsoleKey.Escape;
+            }
         }
     }
 }
